@@ -3,9 +3,11 @@ async function getApi() {
 	const response = await fetch("https://jsonplaceholder.typicode.com/users");
 	
 	var data = await response.json();
+    console.log("truoc" + response)
 	if (response) {
 		document.getElementById('loading').style.display = 'none';
 	}
+    console.log("sau" + response)
 	show(data);
 }
 
